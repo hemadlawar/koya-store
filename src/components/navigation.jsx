@@ -22,7 +22,7 @@ export default function Navigation() {
                 to="/"
                 className="text-white font-semibold text-lg hover:text-gray-200"
               >
-                Goods
+                Bakary
               </Link>
             </li>
             <li>
@@ -38,7 +38,7 @@ export default function Navigation() {
                 to="/phone"
                 className="text-white font-semibold text-lg hover:text-gray-200"
               >
-                Phone
+                Fruits
               </Link>
             </li>
             <li>

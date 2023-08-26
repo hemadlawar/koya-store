@@ -4,8 +4,8 @@ import axios from "axios";
 // Function to fetch phone data from the Unsplash API
 async function fetchPhoneData() {
   const apiKey = "YksZPx2fgk7jVESlPyLidsM9mbXQHB_-8mqIpqPhUEU";
-  const searchQuery = "phone";
-  const perPage = 10;
+  const searchQuery = "fruits";
+  const perPage = 20;
 
   try {
     const response = await axios.get(`https://api.unsplash.com/search/photos`, {
@@ -43,7 +43,7 @@ function PhoneGallery() {
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold mb-6">Phone Gallery</h1>
+      <h1 className="text-3xl font-bold mb-6">Fruits</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {phones.map((phone, index) => (
           <div
