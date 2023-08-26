@@ -4,7 +4,7 @@ import axios from "axios";
 // Function to fetch phone data from the Unsplash API
 async function fetchPhoneData() {
   const apiKey = "YksZPx2fgk7jVESlPyLidsM9mbXQHB_-8mqIpqPhUEU";
-  const searchQuery = "fruit";
+  const searchQuery = "phone";
   const perPage = 10;
 
   try {
@@ -56,7 +56,11 @@ function PhoneGallery() {
               className="mb-4 max-h-40"
             />
             <p className="text-lg font-semibold">{phone.name}</p>
-            <p className="text-gray-600">${phone.price}</p>
+            <p className="text-gray-600 bg-gray-300 my-2">${phone.price}</p>
+
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+              ADD to list
+            </button>
           </div>
         ))}
       </div>

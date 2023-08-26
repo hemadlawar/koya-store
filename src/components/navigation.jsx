@@ -46,7 +46,7 @@ export default function Navigation() {
                 to="/fav"
                 className="text-white font-semibold text-lg hover:text-gray-200"
               >
-                Favourites
+                List
               </Link>
             </li>
           </ul>
