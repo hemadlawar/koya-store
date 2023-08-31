@@ -31,6 +31,7 @@ async function fetchBakeryData() {
 
 function BakeryGallery() {
   const [bakeryItems, setBakeryItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -40,6 +41,20 @@ function BakeryGallery() {
 
     fetchData();
   }, []);
+
+  const handleAddToCart = async (item) => {
+    setCartItems([...cartItems, item]);
+
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/cartItems",
+        item
+      ); // Corrected URL
+      console.log("Item added to cart:", response.name);
+    } catch (error) {
+      console.error("Error adding item to cart:", error);
+    }
+  };
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
@@ -58,7 +73,10 @@ function BakeryGallery() {
             <p className="text-lg font-semibold">{bakery.name}</p>
             <p className="text-gray-600 bg-gray-300 my-2">${bakery.price}</p>
 
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            <button
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              onClick={() => handleAddToCart(bakery)}
+            >
               ADD to list
             </button>
           </div>
