@@ -6,6 +6,10 @@ import Phone from "./phone";
 import Favourite from "./favourite";
 
 export default function Navigation() {
+  const food = [];
+  const blala = (data) => {
+    food.push(data);
+  };
   return (
     <div>
       <nav className="bg-blue-500 p-4">
@@ -54,9 +58,9 @@ export default function Navigation() {
       </nav>
       <Routes>
         <Route path="/" element={<Goods />} />
-        <Route path="/foods" element={<Foods />} />
+        <Route path="/foods" element={<Foods blala={blala} />} />
         <Route path="/phone" element={<Phone />} />
-        <Route path="/fav" element={<Favourite />} />
+        <Route path="/fav" element={<Favourite food={food} />} />
       </Routes>
     </div>
   );

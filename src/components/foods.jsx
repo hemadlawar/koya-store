@@ -29,7 +29,7 @@ async function fetchFoodData() {
   }
 }
 
-function FoodGallery() {
+function FoodGallery({ blala }) {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ function FoodGallery() {
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold mb-6">Food Gallery</h1>
+      {/* ... (existing code remains the same) */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {foods.map((food, index) => (
           <div
@@ -52,13 +52,19 @@ function FoodGallery() {
           >
             <img
               src={food.imageUrl}
-              alt={`Food ${index}`}
+              alt={`food ${index}`}
               className="mb-4 max-h-40"
             />
             <p className="text-lg font-semibold">{food.name}</p>
             <p className="text-gray-600 bg-gray-300 my-2">${food.price}</p>
 
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            {/* ... (existing code remains the same) */}
+            <button
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              onClick={() => {
+                blala(food);
+              }}
+            >
               ADD to list
             </button>
           </div>
