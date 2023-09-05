@@ -4,7 +4,7 @@ import Goods from "./goods";
 import Foods from "./foods";
 import Phone from "./phone";
 import Favourite from "./favourite";
-
+import HomePage from "./home";
 export default function Navigation() {
   const food = [];
   const blala = (data) => {
@@ -24,6 +24,15 @@ export default function Navigation() {
             <li>
               <Link
                 to="/"
+                className="text-white font-semibold text-lg hover:text-gray-200"
+              >
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/bakery"
                 className="text-white font-semibold text-lg hover:text-gray-200"
               >
                 Bakary
@@ -57,7 +66,8 @@ export default function Navigation() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Goods />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/bakery" element={<Goods />} />
         <Route path="/foods" element={<Foods blala={blala} />} />
         <Route path="/phone" element={<Phone />} />
         <Route path="/fav" element={<Favourite food={food} />} />

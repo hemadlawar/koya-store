@@ -5,7 +5,7 @@ import axios from "axios";
 async function fetchFoodData() {
   const apiKey = "YksZPx2fgk7jVESlPyLidsM9mbXQHB_-8mqIpqPhUEU"; // Replace with your actual Unsplash API key
   const searchQuery = "food"; // Adjust the search query for food-related images
-  const perPage = 20;
+  const perPage = 30;
 
   try {
     const response = await axios.get(`https://api.unsplash.com/search/photos`, {
@@ -31,7 +31,7 @@ async function fetchFoodData() {
 
 function FoodGallery({ blala }) {
   const [foods, setFoods] = useState([]);
-
+  const [cartItems, setCartItems] = useState([]);
   useEffect(() => {
     async function fetchData() {
       const foodData = await fetchFoodData();
@@ -41,6 +41,23 @@ function FoodGallery({ blala }) {
     fetchData();
   }, []);
 
+  ////
+  // add item to db.json
+  const handleAddToCart = async (item) => {
+    setCartItems([...cartItems, item]);
+
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/cartItems",
+        item
+      ); // Corrected URL
+      console.log("Item added to cart:", response.name);
+    } catch (error) {
+      console.error("Error adding item to cart:", error);
+    }
+  };
+
+  ///
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
       {/* ... (existing code remains the same) */}
@@ -62,7 +79,7 @@ function FoodGallery({ blala }) {
             <button
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
               onClick={() => {
-                blala(food);
+                handleAddToCart(food);
               }}
             >
               ADD to list

@@ -5,7 +5,7 @@ import axios from "axios";
 async function fetchPhoneData() {
   const apiKey = "YksZPx2fgk7jVESlPyLidsM9mbXQHB_-8mqIpqPhUEU";
   const searchQuery = "fruits";
-  const perPage = 20;
+  const perPage = 30;
 
   try {
     const response = await axios.get(`https://api.unsplash.com/search/photos`, {
@@ -30,8 +30,11 @@ async function fetchPhoneData() {
 }
 
 function PhoneGallery() {
+  /////
   const [phones, setPhones] = useState([]);
-
+  const [cartItems, setCartItems] = useState([]);
+  //////
+  //////
   useEffect(() => {
     async function fetchData() {
       const phoneData = await fetchPhoneData();
@@ -40,6 +43,21 @@ function PhoneGallery() {
 
     fetchData();
   }, []);
+
+  // add item to db.json
+  const handleAddToCart = async (item) => {
+    setCartItems([...cartItems, item]);
+
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/cartItems",
+        item
+      ); // Corrected URL
+      console.log("Item added to cart:", response.name);
+    } catch (error) {
+      console.error("Error adding item to cart:", error);
+    }
+  };
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
@@ -58,7 +76,12 @@ function PhoneGallery() {
             <p className="text-lg font-semibold">{phone.name}</p>
             <p className="text-gray-600 bg-gray-300 my-2">${phone.price}</p>
 
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            <button
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              onClick={() => {
+                handleAddToCart(phone);
+              }}
+            >
               ADD to list
             </button>
           </div>

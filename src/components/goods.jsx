@@ -5,8 +5,8 @@ import axios from "axios";
 async function fetchBakeryData() {
   const apiKey = "YksZPx2fgk7jVESlPyLidsM9mbXQHB_-8mqIpqPhUEU"; // Replace with your actual Unsplash API key
   const searchQuery = "bakery"; // Search for bakery-related images
-  const perPage = 10;
-
+  const perPage = 30;
+  // connect to API and get data from API
   try {
     const response = await axios.get(`https://api.unsplash.com/search/photos`, {
       headers: {
@@ -41,7 +41,7 @@ function BakeryGallery() {
 
     fetchData();
   }, []);
-
+  // add item to db.json
   const handleAddToCart = async (item) => {
     setCartItems([...cartItems, item]);
 
