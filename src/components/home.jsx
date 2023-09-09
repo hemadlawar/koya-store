@@ -3,9 +3,9 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className=" mb-96">
-      <div className="bg-white  mt-28 mb-10   w-8/12  mx-80">
+      <div className="bg-white  mt-28 mb-10   w-7/12   mx-72">
         <header className="bg-blue-500 text-white py-8 text-center ">
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-3xl font-semibold  ">
             Welcome to Online Marketing Shopping
           </h1>
           <p className="text-lg mt-6">
@@ -13,80 +13,97 @@ const HomePage = () => {
           </p>
         </header>
       </div>
-      <div className="grid-cols-1 sm:grid md:grid-cols-2">
-        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-          <a href="#!">
-            <img
-              className="rounded-t-lg"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/041.webp"
-              alt="Hollywood Sign on The Hill"
-            />
-          </a>
-          <div className="p-6">
-            <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Card title
-            </h5>
-            <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+      {/** cardss */}
+      <div className=" ">
+        {/*first and second card */}
+        <div className="flex">
+          {/* first card */}
+          <div className="mx-3 mt-6 flex    w-8/12 flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+            <a href="#!">
+              <img
+                className="rounded-t-lg  w-96  ml-20 mt-2"
+                src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+                alt="Los Angeles Skyscrapers"
+              />
+            </a>
+            <div className="p-6">
+              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Card title
+              </h5>
+              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+
+          {/* second card*/}
+
+          <div className="mx-3 mt-6 flex    w-8/12 flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+            <a href="#!">
+              <img
+                className="rounded-t-lg  w-96  ml-20 mt-2"
+                src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+                alt="Los Angeles Skyscrapers"
+              />
+            </a>
+            <div className="p-6">
+              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Card title
+              </h5>
+              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-          <a href="#!">
-            <img
-              className="rounded-t-lg"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
-              alt="Palm Springs Road"
-            />
-          </a>
-          <div className="p-6">
-            <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Card title
-            </h5>
-            <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+        {/** third and fourth card */}
+        <div className="flex">
+          {/* third card*/}
+
+          <div className="mx-3 mt-6 flex    w-8/12 flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+            <a href="#!">
+              <img
+                className="rounded-t-lg  w-96  ml-20 mt-2"
+                src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+                alt="Los Angeles Skyscrapers"
+              />
+            </a>
+            <div className="p-6">
+              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Card title
+              </h5>
+              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-          <a href="#!">
-            <img
-              className="rounded-t-lg"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/044.webp"
-              alt="Skyscrapers"
-            />
-          </a>
-          <div className="p-6">
-            <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Card title
-            </h5>
-            <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
-          </div>
-        </div>
-        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-          <a href="#!">
-            <img
-              className="rounded-t-lg"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
-              alt="Los Angeles Skyscrapers"
-            />
-          </a>
-          <div className="p-6">
-            <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-              Card title
-            </h5>
-            <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+
+          {/** fourth card */}
+
+          <div className="mx-3 mt-6 flex    w-8/12 flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+            <a href="#!">
+              <img
+                className="rounded-t-lg  w-96  ml-20 mt-2"
+                src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+                alt="Los Angeles Skyscrapers"
+              />
+            </a>
+            <div className="p-6">
+              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                Card title
+              </h5>
+              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
