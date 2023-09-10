@@ -5,7 +5,7 @@ import foodpic from "../pictures/OIP.jpg";
 const HomePage = () => {
   return (
     <div className=" mb-64">
-      <div className="bg-white  mt-28   mb-24 w-7/12   mx-72">
+      <div className="bg-white  mt-28   mb-24 w-7/12  ml-80">
         <header className="bg-blue-500 text-white py-8 text-center ">
           <h1 className="text-3xl font-semibold  ">
             Welcome to Online Marketing Shopping
@@ -41,7 +41,7 @@ const HomePage = () => {
 
           {/* second card*/}
 
-          <div className="mx-3 mt-6 flex    w-8/12 flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  w-4/12  h-3/5">
+          <div className="mx-3 mt-6 flex    flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  w-4/12  h-3/5">
             <a href="#!">
               <img
                 className="rounded-t-lg   w-2/5   ml-20 mt-2  ml-44"
