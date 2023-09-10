@@ -1,54 +1,6 @@
 {
   "cartItems": [
     {
-      "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwyfHxiYWtlcnl8ZW58MHx8fHwxNjkzNDM0OTY5fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "two brown croissants",
-      "price": "$16",
-      "id": 1
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwxfHxiYWtlcnl8ZW58MHx8fHwxNjkzNDM0OTY5fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "variety of breads",
-      "price": "$7",
-      "id": 2
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwxfHxiYWtlcnl8ZW58MHx8fHwxNjkzNDM0OTY5fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "variety of breads",
-      "price": "$7",
-      "id": 3
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwxfHxiYWtlcnl8ZW58MHx8fHwxNjkzNDM0OTY5fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "variety of breads",
-      "price": "$7",
-      "id": 4
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwxfHxiYWtlcnl8ZW58MHx8fHwxNjkzNDM0OTY5fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "variety of breads",
-      "price": "$7",
-      "id": 5
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwyfHxiYWtlcnl8ZW58MHx8fHwxNjkzNTkwNzA4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "two brown croissants",
-      "price": "$7",
-      "id": 6
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwyfHxmb29kfGVufDB8fHx8MTY5MzU5MDczOHww&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "vegetable and meat on bowl",
-      "price": "$6",
-      "id": 7
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwyfHxmb29kfGVufDB8fHx8MTY5MzU5MDczOHww&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "vegetable and meat on bowl",
-      "price": "$6",
-      "id": 8
-    },
-    {
       "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwyfHxmb29kfGVufDB8fHx8MTY5MzU5MDczOHww&ixlib=rb-4.0.3&q=80&w=1080",
       "name": "vegetable and meat on bowl",
       "price": "$6",
