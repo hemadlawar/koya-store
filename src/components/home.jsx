@@ -2,7 +2,16 @@ import React from "react";
 import bakerypic from "../pictures/Bakery.png";
 import fruitpic from "../pictures/fruit-hd-wallpapers-03484-500x500.webp";
 import foodpic from "../pictures/OIP.jpg";
+import { Link } from "react-router-dom";
 const HomePage = () => {
+  /**
+   * <Link
+                to="/foods"
+                className="text-white font-semibold text-lg hover:text-gray-200"
+              >
+                Foods
+              </Link>
+   */
   return (
     <div className=" mb-64">
       <div className="bg-white  mt-28   mb-24 w-7/12  ml-80">
@@ -21,12 +30,13 @@ const HomePage = () => {
         <div className="flex justify-center">
           {/* first card */}
           <div className="mx-3 mt-6 flex   flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  w-4/12  h-3/5">
-            <a href="#!">
+            <Link to="bakery">
               <img
                 className="rounded-t-lg   w-2/5   ml-20 mt-2 ml-44"
                 src={bakerypic}
+                alt="a bakery picture"
               />
-            </a>
+            </Link>
             <div className="p-6">
               <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                 bakery
@@ -42,13 +52,13 @@ const HomePage = () => {
           {/* second card*/}
 
           <div className="mx-3 mt-6 flex    flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  w-4/12  h-3/5">
-            <a href="#!">
+            <Link to="/foods">
               <img
                 className="rounded-t-lg   w-2/5   ml-20 mt-2  ml-44"
                 src={foodpic}
-                alt="Los Angeles Skyscrapers"
+                alt="a food picture"
               />
-            </a>
+            </Link>
             <div className="p-6">
               <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                 foods
@@ -66,13 +76,13 @@ const HomePage = () => {
           {/* third card*/}
 
           <div className="mx-3 mt-6 flex      flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 w-4/12  h-3/5">
-            <a href="#!">
+            <Link to="/phone">
               <img
                 className="rounded-t-lg  w-2/5  ml-20 mt-2 ml-44"
                 src={fruitpic}
-                alt="Los Angeles Skyscrapers"
+                alt="a fruit picture"
               />
-            </a>
+            </Link>
             <div className="p-6">
               <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                 fruits
