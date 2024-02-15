@@ -8,8 +8,6 @@ function App() {
       <Router>
         <Navigation />
       </Router>
-
-      <Footer />
     </div>
   );
 }

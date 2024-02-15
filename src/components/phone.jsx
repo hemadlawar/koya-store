@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import Footer from "./footer";
 // Function to fetch phone data from the Unsplash API
 async function fetchPhoneData() {
   const apiKey = "YksZPx2fgk7jVESlPyLidsM9mbXQHB_-8mqIpqPhUEU";
@@ -86,6 +86,9 @@ function PhoneGallery() {
             </button>
           </div>
         ))}
+      </div>
+      <div className="mt-60  w-full">
+        <Footer />
       </div>
     </div>
   );

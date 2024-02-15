@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import Footer from "./footer";
 // Function to fetch food data from the Unsplash API
 async function fetchFoodData() {
   const apiKey = "YksZPx2fgk7jVESlPyLidsM9mbXQHB_-8mqIpqPhUEU"; // Replace with your actual Unsplash API key
@@ -86,6 +86,9 @@ function FoodGallery({ blala }) {
             </button>
           </div>
         ))}
+      </div>
+      <div className="mt-60  w-full">
+        <Footer />
       </div>
     </div>
   );

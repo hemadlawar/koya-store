@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import Footer from "./footer";
 export default function Favourite() {
   const [list, setLists] = useState([]);
 
@@ -48,6 +48,10 @@ export default function Favourite() {
             <div className="mt-2 text-gray-700">${item.price}</div>
           </div>
         ))}
+      </div>
+      <div className="mt-192 w-full">
+        {" "}
+        <Footer />
       </div>
     </div>
   );
