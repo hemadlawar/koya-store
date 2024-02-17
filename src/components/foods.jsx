@@ -75,7 +75,6 @@ function FoodGallery({ blala }) {
             <p className="text-lg font-semibold">{food.name}</p>
             <p className="text-gray-600 bg-gray-300 my-2">${food.price}</p>
 
-            {/* ... (existing code remains the same) */}
             <button
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
               onClick={() => {
