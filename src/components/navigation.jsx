@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import Goods from "./goods";
 import Foods from "./foods";
@@ -7,9 +7,7 @@ import Favourite from "./favourite";
 import HomePage from "./home";
 export default function Navigation() {
   const [item, setItem] = useState(0);
-  useEffect(() => {
-    setItem(item + 1);
-  }, []);
+
   const food = [];
   const blala = (data) => {
     food.push(data);
@@ -63,7 +61,7 @@ export default function Navigation() {
                 to="/fav"
                 className="text-white font-semibold text-lg hover:text-gray-200"
               >
-                List
+                <div className="w-3 h-3 mr-7">List[{item}]</div>
               </Link>
             </li>
           </ul>
@@ -71,7 +69,10 @@ export default function Navigation() {
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/bakery" element={<Goods />} />
+        <Route
+          path="/bakery"
+          element={<Goods setItem={setItem} item={item} />}
+        />
         <Route path="/foods" element={<Foods blala={blala} />} />
         <Route path="/phone" element={<Phone />} />
         <Route path="/fav" element={<Favourite food={food} />} />

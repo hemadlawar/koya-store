@@ -29,7 +29,7 @@ async function fetchBakeryData() {
   }
 }
 
-function BakeryGallery() {
+function BakeryGallery({ setItem, item }) {
   const [bakeryItems, setBakeryItems] = useState([]);
   const [cartItems, setCartItems] = useState([]);
 
@@ -42,8 +42,9 @@ function BakeryGallery() {
     fetchData();
   }, []);
   // add item to db.json
-  const handleAddToCart = async (item) => {
+  const handleAddToCart = async (item, item2) => {
     setCartItems([...cartItems, item]);
+    setItem(item2 + 1);
 
     try {
       const response = await axios.post(
@@ -75,7 +76,7 @@ function BakeryGallery() {
 
             <button
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-              onClick={() => handleAddToCart(bakery)}
+              onClick={() => handleAddToCart(bakery, item)}
             >
               ADD to list
             </button>
