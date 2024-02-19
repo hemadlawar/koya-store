@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import Goods from "./goods";
 import Foods from "./foods";
@@ -6,6 +6,10 @@ import Phone from "./phone";
 import Favourite from "./favourite";
 import HomePage from "./home";
 export default function Navigation() {
+  const [item, setItem] = useState(0);
+  useEffect(() => {
+    setItem(item + 1);
+  }, []);
   const food = [];
   const blala = (data) => {
     food.push(data);
