@@ -29,7 +29,7 @@ async function fetchFoodData() {
   }
 }
 
-function FoodGallery({ blala }) {
+function FoodGallery({ blla, itemm, setItem }) {
   const [foods, setFoods] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   useEffect(() => {
@@ -44,6 +44,9 @@ function FoodGallery({ blala }) {
   ////
   // add item to db.json
   const handleAddToCart = async (item) => {
+    //list counter in navigation bar
+    setItem(itemm + 1);
+
     setCartItems([...cartItems, item]);
 
     try {

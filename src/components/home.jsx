@@ -4,6 +4,7 @@ import fruitpic from "../pictures/fruit-hd-wallpapers-03484-500x500.webp";
 import foodpic from "../pictures/OIP.jpg";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
+import { useState } from "react";
 const HomePage = () => {
   return (
     <div className=" ">

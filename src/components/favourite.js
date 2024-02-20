@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Footer from "./footer";
-export default function Favourite() {
+export default function Favourite({ setItem, item }) {
   const [list, setLists] = useState([]);
 
   useEffect(() => {

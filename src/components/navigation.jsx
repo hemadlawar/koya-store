@@ -6,7 +6,7 @@ import Phone from "./phone";
 import Favourite from "./favourite";
 import HomePage from "./home";
 export default function Navigation() {
-  const [item, setItem] = useState(0);
+  const [itemm, setItem] = useState(0);
 
   const food = [];
   const blala = (data) => {
@@ -61,7 +61,7 @@ export default function Navigation() {
                 to="/fav"
                 className="text-white font-semibold text-lg hover:text-gray-200"
               >
-                <div className="w-3 h-3 mr-7">List[{item}]</div>
+                <div className="w-3 h-3 mr-7">List[{itemm}]</div>
               </Link>
             </li>
           </ul>
@@ -71,11 +71,20 @@ export default function Navigation() {
         <Route path="/" element={<HomePage />} />
         <Route
           path="/bakery"
-          element={<Goods setItem={setItem} item={item} />}
+          element={<Goods setItem={setItem} itemm={itemm} />}
         />
-        <Route path="/foods" element={<Foods blala={blala} />} />
-        <Route path="/phone" element={<Phone />} />
-        <Route path="/fav" element={<Favourite food={food} />} />
+        <Route
+          path="/foods"
+          element={<Foods blala={blala} setItem={setItem} itemm={itemm} />}
+        />
+        <Route
+          path="/phone"
+          element={<Phone setItem={setItem} itemm={itemm} />}
+        />
+        <Route
+          path="/fav"
+          element={<Favourite food={food} setItem={setItem} itemm={itemm} />}
+        />
       </Routes>
     </div>
   );

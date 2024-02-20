@@ -6,6 +6,7 @@ async function fetchBakeryData() {
   const apiKey = "YksZPx2fgk7jVESlPyLidsM9mbXQHB_-8mqIpqPhUEU"; // Replace with your actual Unsplash API key
   const searchQuery = "bakery"; // Search for bakery-related images
   const perPage = 30;
+  //////////
   // connect to API and get data from API
   try {
     const response = await axios.get(`https://api.unsplash.com/search/photos`, {
@@ -29,7 +30,7 @@ async function fetchBakeryData() {
   }
 }
 
-function BakeryGallery({ setItem, item }) {
+function BakeryGallery({ itemm, setItem }) {
   const [bakeryItems, setBakeryItems] = useState([]);
   const [cartItems, setCartItems] = useState([]);
 
@@ -42,9 +43,9 @@ function BakeryGallery({ setItem, item }) {
     fetchData();
   }, []);
   // add item to db.json
-  const handleAddToCart = async (item, item2) => {
+  const handleAddToCart = async (item) => {
+    setItem(itemm + 1);
     setCartItems([...cartItems, item]);
-    setItem(item2 + 1);
 
     try {
       const response = await axios.post(
@@ -76,7 +77,7 @@ function BakeryGallery({ setItem, item }) {
 
             <button
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-              onClick={() => handleAddToCart(bakery, item)}
+              onClick={() => handleAddToCart(bakery)}
             >
               ADD to list
             </button>

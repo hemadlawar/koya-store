@@ -29,7 +29,7 @@ async function fetchPhoneData() {
   }
 }
 
-function PhoneGallery() {
+function PhoneGallery({ itemm, setItem }) {
   /////
   const [phones, setPhones] = useState([]);
   const [cartItems, setCartItems] = useState([]);
@@ -46,6 +46,7 @@ function PhoneGallery() {
 
   // add item to db.json
   const handleAddToCart = async (item) => {
+    setItem(itemm + 1);
     setCartItems([...cartItems, item]);
 
     try {
