@@ -1,19 +1,29 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Footer from "./footer";
-export default function Favourite({ setItem, item }) {
+export default function Favourite({ itemm, setItem }) {
   const [list, setLists] = useState([]);
-
+  const [totalPrice, settotalPrice] = useState(0);
+  console.log(itemm);
   useEffect(() => {
     axios
       .get("http://localhost:3001/cartItems")
       .then((res) => {
         setLists(res.data);
+        // settotalPrice(totalPrice+list.price)
+        console.log(list);
       })
       .catch((err) => console.log(err));
   }, []);
 
   const handleDelete = (id) => {
+    /// Delete the items number on navbar
+    if (itemm == 0) {
+      setItem(0);
+    } else {
+      setItem(itemm - 1);
+    }
+
     // Send a DELETE request to remove the item from the server
     axios
       .delete(`http://localhost:3001/cartItems/${id}`)
@@ -27,6 +37,9 @@ export default function Favourite({ setItem, item }) {
 
   return (
     <div className="container mx-auto py-8">
+      <h4 className="   text-2xl bg-zinc-400  text-center ">
+        your list- Items number are `{itemm}`
+      </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {list.map((item) => (
           <div

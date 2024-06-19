@@ -19,7 +19,7 @@ export default function Navigation() {
           {" "}
           {/* Added 'flex-wrap' */}
           <h3 className="text-white font-bold text-xl sm:mb-4">
-            koya Online shop
+            Online shopping app
           </h3>{" "}
           {/* Added 'sm:mb-4' */}
           <ul className="flex space-x-4">

@@ -1,46 +1,10 @@
 {
   "cartItems": [
     {
-      "imageUrl": "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwzfHxiYWtlcnl8ZW58MHx8fHwxNzA4Mzc0MjUyfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "person making dough beside brown wooden rolling pin",
-      "price": "$18",
+      "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHwyfHxmb29kfGVufDB8fHx8MTcxODgzNjM1M3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "name": "cooked dish on gray bowl",
+      "price": "$14",
       "id": 1
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHw0fHxmb29kfGVufDB8fHx8MTcwODM3NjkzMXww&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "baked pancakes",
-      "price": "$16",
-      "id": 5
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHw0fHxmcnVpdHN8ZW58MHx8fHwxNzA4Mzc2OTMzfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "green and brown fruits on blue surface",
-      "price": "$64",
-      "id": 8
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1573246123716-6b1782bfc499?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHw4fHxmcnVpdHN8ZW58MHx8fHwxNzA4Mzc2OTMzfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "vegetables and fruits display",
-      "price": "$80",
-      "id": 9
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1573246123716-6b1782bfc499?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHw4fHxmcnVpdHN8ZW58MHx8fHwxNzA4Mzc2OTMzfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "vegetables and fruits display",
-      "price": "$5",
-      "id": 13
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHw0fHxiYWtlcnl8ZW58MHx8fHwxNzA4NDU0MjgyfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "breads in display shelf",
-      "price": "$11",
-      "id": 19
-    },
-    {
-      "imageUrl": "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTM3MTR8MHwxfHNlYXJjaHw0fHxiYWtlcnl8ZW58MHx8fHwxNzA4NDU0MjgyfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "name": "breads in display shelf",
-      "price": "$11",
-      "id": 20
     }
   ]
 }

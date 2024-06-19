@@ -19,8 +19,8 @@ const HomePage = () => {
         </header>
       </div>
       <div className="flex flex-col md:flex-row justify-center">
-        {/* First card */}
-        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-md dark:bg-neutral-700 md:w-5/12 md:h-3/5">
+        {/***************************************************************************************************************************First card */}
+        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-zinc-300  shadow-md dark:bg-neutral-700 md:w-5/12 md:h-3/5">
           <Link to="bakery">
             <img
               className="rounded-t-lg w-full md:w-2/5 mx-auto mt-2"
@@ -40,8 +40,8 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Second card */}
-        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-md dark:bg-neutral-700 md:w-5/12 md:h-3/5">
+        {/*********************************************************************************************************************** Second card */}
+        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-zinc-300 shadow-md dark:bg-neutral-700 md:w-5/12 md:h-3/5">
           <Link to="/foods">
             <img
               className="rounded-t-lg w-full md:w-2/5 mx-auto mt-2"
@@ -61,11 +61,11 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Third card */}
-        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-md dark:bg-neutral-700 md:w-5/12 md:h-3/5">
+        {/*--------------------------------------------------------------------------------------------------------------------------- Third card */}
+        <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-zinc-300  shadow-md dark:bg-neutral-700 md:w-5/12 md:h-3/5">
           <Link to="/phone">
             <img
-              className="rounded-t-lg w-full md:w-52   mx-auto mt-2"
+              className="rounded-t-lg w-full md:w-52  h-32  mx-auto mt-2"
               src={fruitpic}
               alt="a fruit picture"
             />
